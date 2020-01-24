@@ -486,10 +486,53 @@ h4 { font-size: 20px; }
 
 footer { padding: 83px 0 99px; }
 
-.footertop div { flex-basis: 33%; }
+.footertop { margin-bottom: 100px; }
 
+.footertop div:first-child, .footertop div:last-child { flex-basis: 34%; }
 
+.footertop div:nth-child(2) { flex-basis: 15%; }
 
+.footertop li { 
+  margin-bottom: 5px;
+  display: block; 
+}
+
+.footertop a {
+  padding: 2px;
+  color: #3dae7c; 
+  font-size: 12px;
+}
+
+.footertop h5 {
+  margin-bottom: 23px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footertop p { margin-bottom: 16px; }
+
+.subscribe .formgroup input { 
+  width: 65%;
+  display: inline-block;
+  float: left;
+  background-color: #000;
+}
+
+.subscribe .formcontrol input {
+  padding: 7.5px 3% ;
+  border:1px solid transparent;
+  display: inline-block;
+  background-color: #48d493;
+  color: #000;
+  font-size: 9px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footertop + p { text-align: center; }
+
+.footertop + p a { color: #3dae7c; }
 
  /*=================================
   footer styling ends here
@@ -528,6 +571,8 @@ footer { padding: 83px 0 99px; }
   background-color: #000;
   color: #48d493;
 }
+
+.footertop a:hover, .footertop + p a:hover { color: #fff; } 
 
 }
 
