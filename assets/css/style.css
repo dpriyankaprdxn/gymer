@@ -187,8 +187,9 @@ h2{
 /*=================================
   main styling starts here
 =================================*/
-
-.info { 
+  
+.info,
+.classes { 
   background-color: #000;
   color: #fff;
 }
@@ -279,9 +280,13 @@ h3 {
   text-transform:uppercase;
 }
 
+
 /*information section styling end*/
 
+/*classes section start*/
 
+  
+/*classes section end*/
 
 
 
