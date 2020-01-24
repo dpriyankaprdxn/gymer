@@ -189,7 +189,8 @@ h2{
 =================================*/
   
 .info,
-.classes { 
+.classes,
+.Schedule { 
   background-color: #000;
   color: #fff;
 }
@@ -208,12 +209,17 @@ h3 {
 }
 
 .info ul,
-.fitness
-{
+.fitness,
+.slider-controls{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
+}
+
+.customdiv { 
+  width: 50%; 
+  margin-bottom: 47px;
 }
 
 /*information section styling start*/
@@ -285,10 +291,92 @@ h3 {
 
 /*classes section start*/
 
-  
+.sliderwrapper {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.sliderwrapper li:nth-child(even) { display: none; }
+
+.sliderwrapper li { 
+  width: 25%;
+  border: 1px solid #fff;
+  margin-right: -1%;
+}
+
+.sliderwrapper img { max-width: 320px; }  
+
+.slider-controls { 
+  padding: 31px 0;
+  justify-content: center; 
+}
+
+.slider-dots {
+  padding: 4px;
+  border-radius: 50%;
+  margin-left: 0.5%;
+  background-color: #fff;
+}
+
+.slider-controls a:first-child { background-color: #3dae7c; }
+
 /*classes section end*/
 
+/*schedule section start*/
 
+.Schedule { padding: 100px 0; }
+
+.timetable {
+  margin-bottom: 30px; 
+  text-align: center;
+}
+
+.timetable li:not(:last-child) { margin-right: 2%;  }
+
+.timetable li:first-child a {
+  border-radius: 5%;
+  background-color: #3dae7c;
+  color: #fff;
+}
+
+.timetable a {
+  padding: 16%;
+  color: #3dae7c;
+  font-size: 12px;
+}
+
+.timetable + div ul{
+  border:1px solid #666;
+  font-size: 12px;
+  color: #ccc;
+}
+
+.timetable + div li:first-child,
+.timetable + div li:nth-child(3) {
+  width: 24%;
+  padding: 18px 0 18px 1%;
+  border-right:1px solid #666;
+  font-size: 12px;
+}
+
+.timetable + div li:nth-child(2) {
+  width: 30%;
+  padding: 18px 0 18px 1%;
+  border-right:1px solid #666;
+  font-size: 12px;
+}
+
+.timetable + div li:last-child {
+  width: 17%;
+}
+
+.timetable + div li:last-child a {
+  margin: 0 30%;
+  color: #3dae7c;
+  text-align: center;
+  text-transform: capitalize;
+}
+/*schedule section end*/
 
 
 
@@ -330,6 +418,13 @@ h3 {
     background: #000;
     color: #3dae7c;
   }
+  
+  .timetable a:hover {
+    border-radius: 5%;
+    background-color: #3dae7c;
+    color: #fff; 
+  }
+  .timetable + div li:last-child a:hover { color: #fff; }
 }
 
 
