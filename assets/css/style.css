@@ -88,6 +88,10 @@ body {
 }
 
 a { 
+  cursor: pointer;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
   display: inline-block;
   text-decoration: none; 
 }
@@ -107,10 +111,71 @@ li {
   Header styling starts here
 =================================*/
 
+.header-bgimg {
+  position: relative;
+  background: url('https://via.placeholder.com/1284x648.png') no-repeat; 
+  background-size: cover;
+}
+
+header .wrapper { 
+  width: 88%;
+  padding-top: 22px;
+}
+
+h1 { 
+  margin-right: 28%;
+  border: 1px solid #000;
+  display: inline-block;
+  float: left;
+}
+
+nav li:not(:last-child) {
+  border-bottom: 1px solid tranparent;
+  margin-left: 1%;
+}
+
+nav li:first-child a  {
+  color: #3dae7c;
+  border-bottom: 1px solid #fff;
+}
+
+nav li:last-child {  float: right; }
+
+nav a {
+  padding: 2px 3%;
+  color: #fff;
+  font-size: 14px;
+}
+
+nav li:last-child a {
+  padding: 7px;
+  border: 1px solid #3dae7c;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  border-radius: 10%;  
+  margin-right: 2%;
+  color: #3dae7c;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.hamburger { display: none; }
 
 
+/*banner styling start*/
 
+.banner { padding: 302px 0; }
 
+h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 78px;
+  text-align: center;
+  text-transform: capitalize; 
+  transform: translate(-50%,-50%);
+}
+/*banner styling end*/
 
 /*=================================
   Header styling ends here
@@ -146,6 +211,22 @@ li {
 =================================*/ 
 
 /*media query starts*/
+
+/*media query for remove hover effet below 1024px*/
+@media only screen and (min-width: 1024px) {
+
+  nav a:hover {
+    color: #3dae7c;
+    border-bottom: 1px solid #fff;
+  }
+
+  nav li:last-child a:hover {
+    border: 1px solid #fff;
+    color: #fff;
+  }
+}
+
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
