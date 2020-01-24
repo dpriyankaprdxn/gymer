@@ -319,6 +319,8 @@ h4 { font-size: 20px; }
 
 .slider-dots {
   padding: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   border-radius: 50%;
   margin-left: 0.5%;
   background-color: #fff;
@@ -340,6 +342,8 @@ h4 { font-size: 20px; }
 .timetable li:not(:last-child) { margin-right: 2%;  }
 
 .timetable li:first-child a {
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
   border-radius: 5%;
   background-color: #3dae7c;
   color: #fff;
@@ -467,6 +471,8 @@ h4 { font-size: 20px; }
 .contact-form .formcontrol input {
   padding:12px 15%;
   border:1px solid transparent;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
   border-radius: 5%;
   background-color: #48d493;
   color: #000;
@@ -560,6 +566,8 @@ footer { padding: 83px 0 99px; }
   }
   
   .timetable a:hover {
+   -webkit-border-radius: 5%;
+   -moz-border-radius: 5%;
     border-radius: 5%;
     background-color: #3dae7c;
     color: #fff; 
