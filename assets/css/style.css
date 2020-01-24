@@ -192,7 +192,8 @@ h2{
 .classes,
 .Schedule,
 .Trainers,
-.services { 
+.services,
+footer { 
   background-color: #000;
   color: #fff;
 }
@@ -213,7 +214,8 @@ h3 {
 .info ul,
 .fitness,
 .slider-controls,
-.trainer-info {
+.trainer-info,
+.footertop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -482,8 +484,9 @@ h4 { font-size: 20px; }
   footer styling starts here
 =================================*/ 
 
+footer { padding: 83px 0 99px; }
 
-
+.footertop div { flex-basis: 33%; }
 
 
 
